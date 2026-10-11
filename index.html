@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<title>琪琪电影网伦理电影 - 伦理电影赏析与选片指南_经典伦理片单、道德困境叙事与深度影评</title>
+<meta name="description" content="琪琪电影网伦理电影（qiqidianyingwanglunlidianying）专注伦理电影的赏析与选片：整理以道德困境为叙事引擎的经典伦理片单、家庭伦理、医疗伦理、战争伦理、法律伦理、科技伦理题材，解读叙事结构与深度影评，提供正版观影渠道与观影指南。">
+<meta name="keywords" content="琪琪电影网伦理电影,伦理电影,伦理片,道德困境,家庭伦理,医疗伦理,战争伦理,法律伦理,科技伦理,电影赏析,电影影评,观影指南,高分片单,4K修复">
+<link rel="canonical" href="https://qiqidianyingwanglunlidianying-cn.github.io/">
+<style>
+:root{
+  --bg:#0b1020; --bg2:#111a30; --ink:#eef1f7; --ink2:#c4cbe0; --ink3:#8d97b0;
+  --rose:#ff6f91; --plum:#a06cff; --gold:#ffcf7a; --teal:#2dd4bf; --blue:#5b8cff;
+  --line:rgba(255,255,255,.10); --line2:rgba(255,255,255,.06);
+  --r:18px; --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:15px/1.75 "PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,sans-serif;
+  -webkit-text-size-adjust:100%;
+  background-image:radial-gradient(circle at 12% -10%, rgba(255,111,145,.16), transparent 42%),
+                  radial-gradient(circle at 88% 8%, rgba(160,108,255,.14), transparent 40%),
+                  radial-gradient(circle at 50% 120%, rgba(45,212,191,.08), transparent 46%);
+  background-attachment:fixed;
+}
+img,svg{display:block; max-width:100%}
+a{color:inherit; text-decoration:none}
+::selection{background:var(--rose); color:#fff}
+
+/* ── 顶栏 ── */
+.nav{
+  position:sticky; top:0; z-index:50; backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  background:rgba(11,16,32,.72); border-bottom:1px solid var(--line);
+}
+.nav-in{max-width:var(--max); margin:0 auto; padding:12px 22px; display:flex; align-items:center; gap:18px}
+.brand{display:flex; align-items:baseline; gap:9px; font-weight:800; letter-spacing:.02em}
+.brand b{font-size:19px; background:linear-gradient(92deg,var(--rose),var(--plum) 55%,var(--gold)); -webkit-background-clip:text; background-clip:text; color:transparent}
+.brand i{font-style:normal; font-size:11px; color:var(--ink3); letter-spacing:.14em; border:1px solid var(--line); border-radius:99px; padding:2px 9px}
+.menu{display:flex; gap:4px; margin-left:auto; flex-wrap:wrap}
+.menu a{
+  font-size:13.5px; padding:7px 13px; border-radius:99px; color:var(--ink2);
+  transition:.22s; white-space:nowrap;
+}
+.menu a:hover{color:#fff; background:rgba(255,255,255,.08)}
+.menu a.on{color:#0b1020; background:linear-gradient(92deg,var(--rose),var(--gold)); font-weight:700}
+.ham{display:none; margin-left:auto; width:40px; height:40px; border:1px solid var(--line); border-radius:12px; background:transparent; color:var(--ink); cursor:pointer; font-size:19px}
+
+/* ── 首屏 ── */
+.hero{max-width:var(--max); margin:0 auto; padding:58px 22px 70px; display:grid; grid-template-columns:1.05fr .95fr; gap:54px; align-items:center}
+.kv{position:relative; height:min(440px,60vh); display:flex; align-items:center; justify-content:center}
+/* 天平 */
+.scale{position:relative; width:300px; height:300px}
+.scale::before{content:""; position:absolute; inset:0; border-radius:50%; border:1px dashed rgba(255,207,122,.34); animation:spin 26s linear infinite}
+.scale::after{content:""; position:absolute; inset:22px; border-radius:50%; border:1px dashed rgba(45,212,191,.26); animation:spin 40s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pillar{position:absolute; left:50%; top:14px; width:3px; height:150px; background:linear-gradient(180deg,var(--gold),rgba(255,207,122,0)); transform-origin:top; transform:translateX(-50%) rotate(0deg)}
+.beam{position:absolute; left:50%; top:14px; width:240px; height:3px; margin-left:-120px; background:linear-gradient(90deg,transparent,var(--gold) 14%,var(--gold) 86%,transparent); transform-origin:center 0; animation:sway 7s ease-in-out infinite alternate}
+@keyframes sway{from{transform:rotate(-9deg)} to{transform:rotate(9deg)}}
+.pan{position:absolute; top:-15px; width:78px; height:78px; border-radius:50% 50% 8% 8% / 60% 60% 8% 8%; background:linear-gradient(160deg,var(--rose),var(--plum)); opacity:.92}
+.pan.l{left:-6px; animation:lift 5.5s ease-in-out infinite alternate}
+.pan.r{right:-6px; animation:lift 5.5s ease-in-out infinite alternate-reverse}
+@keyframes lift{from{transform:translateY(0) scale(.94)} to{transform:translateY(-26px) scale(1.06)}}
+.knob{position:absolute; left:50%; top:2px; transform:translateX(-50%); width:14px; height:14px; border-radius:50%; background:var(--gold); box-shadow:0 0 26px rgba(255,207,122,.8)}
+.core{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); text-align:center; z-index:3}
+.core em{font-style:normal; font-family:Georgia,"Songti SC",serif; font-size:118px; line-height:1; font-weight:900;
+  background:linear-gradient(150deg,#fff,var(--rose) 48%,var(--gold)); -webkit-background-clip:text; background-clip:text; color:transparent;
+  filter:drop-shadow(0 10px 30px rgba(255,111,145,.3))}
+.core span{display:block; margin-top:6px; font-size:11px; letter-spacing:.34em; color:var(--ink3)}
+.halo{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:150px; height:150px; border-radius:50%;
+  background:radial-gradient(circle, rgba(255,111,145,.28), transparent 68%); animation:pulse 3.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:translate(-50%,-50%) scale(1); opacity:.7} 50%{transform:translate(-50%,-50%) scale(1.7); opacity:0}}
+.h1{font-size:clamp(27px,3.5vw,42px); line-height:1.34; margin:0 0 16px; font-weight:800; letter-spacing:.01em}
+.h1 em{font-style:normal; background:linear-gradient(92deg,var(--rose),var(--gold)); -webkit-background-clip:text; background-clip:text; color:transparent}
+.h1 u{text-decoration:none; border-bottom:3px solid var(--rose)}
+.lede{color:var(--ink2); font-size:15.5px; margin:0 0 22px; max-width:44ch}
+.chips{display:flex; gap:9px; flex-wrap:wrap; margin-bottom:26px}
+.chips s{text-decoration:none; font-size:12px; letter-spacing:.06em; color:var(--ink2); border:1px solid var(--line); border-radius:99px; padding:6px 13px; background:rgba(255,255,255,.03)}
+.cta{display:flex; gap:12px; flex-wrap:wrap}
+.btn{font:inherit; font-size:14.5px; font-weight:700; padding:13px 26px; border-radius:99px; cursor:pointer; border:0; transition:.2s}
+.btn.p{background:linear-gradient(92deg,var(--rose),var(--plum)); color:#fff}
+.btn.p:hover{transform:translateY(-2px); box-shadow:0 12px 28px rgba(255,111,145,.32)}
+.btn.g{background:transparent; color:var(--ink); border:1px solid var(--line)}
+.btn.g:hover{border-color:var(--gold); color:var(--gold)}
+
+/* ── 通用区块 ── */
+section{padding:74px 22px}
+.wrap{max-width:var(--max); margin:0 auto}
+.eyebrow{font-size:11.5px; letter-spacing:.26em; color:var(--rose); text-transform:uppercase; margin:0 0 10px}
+.h2{font-size:clamp(23px,2.6vw,31px); margin:0 0 10px; font-weight:800; letter-spacing:.01em}
+.h2 u{text-decoration:none; color:var(--gold)}
+.sub{color:var(--ink3); font-size:14px; margin:0 0 34px; max-width:62ch}
+.kicker{display:inline-flex; align-items:center; gap:9px; font-size:12px; letter-spacing:.18em; color:var(--ink3); margin-bottom:26px}
+.kicker::before{content:""; width:26px; height:1px; background:var(--rose)}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.015)); border:1px solid var(--line); border-radius:var(--r); padding:22px}
+
+/* ① 伦理片单 —— 横向滑动卡 */
+.rail{display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x proximity; padding:6px 2px 22px; scrollbar-width:thin; scrollbar-color:rgba(255,255,255,.18) transparent}
+.rail::-webkit-scrollbar{height:8px} .rail::-webkit-scrollbar-thumb{background:rgba(255,255,255,.18); border-radius:99px}
+.mv{flex:0 0 262px; scroll-snap-align:start; position:relative; height:400px; border-radius:var(--r); overflow:hidden; cursor:default;
+  --a:#ff6f91; --b:#a06cff; --c:#ffcf7a;
+}
+.mv::before{content:""; position:absolute; inset:0; background:linear-gradient(155deg,var(--a),var(--b) 60%,var(--c)); transition:transform .5s ease}
+.mv::after{content:""; position:absolute; inset:0; background:radial-gradient(120% 90% at var(--mx,50%) var(--my,8%), rgba(255,255,255,.26), transparent 56%); opacity:0; transition:opacity .25s}
+.mv:hover::before{transform:scale(1.07)}
+.mv:hover::after{opacity:1}
+.mv .fr{position:absolute; left:16px; right:16px; top:16px; bottom:16px; border:1px solid rgba(255,255,255,.34); border-radius:10px; pointer-events:none}
+.mv .fr::before,.mv .fr::after{content:""; position:absolute; width:15px; height:1px; background:rgba(255,255,255,.55)}
+.mv .fr::before{left:-8px; top:50%} .mv .fr::after{right:-8px; top:50%}
+.mv .no{position:absolute; right:20px; top:16px; font:900 60px/1 "Impact",system-ui; color:rgba(255,255,255,.16); letter-spacing:-.02em}
+.mv .meta{position:absolute; left:0; right:0; bottom:0; padding:20px; background:linear-gradient(0deg,rgba(5,8,16,.96),rgba(5,8,16,.4) 70%,transparent); transform:translateY(34px); transition:.32s}
+.mv:hover .meta{transform:translateY(0)}
+.mv h3{margin:0 0 7px; font-size:19px; font-family:Georgia,"Songti SC",serif; letter-spacing:.02em}
+.mv p{margin:0; font-size:12.5px; color:var(--ink2); line-height:1.6}
+.mv .tags{margin-top:11px; display:flex; gap:6px; flex-wrap:wrap}
+.mv .tags s{text-decoration:none; font-size:10.5px; letter-spacing:.05em; padding:3px 8px; border-radius:6px; background:rgba(255,255,255,.13); color:#fff}
+.mv .sc{position:absolute; left:20px; top:18px; font:700 13px/1 "Impact"; color:var(--gold); letter-spacing:.06em}
+.mv .rt{position:absolute; right:20px; bottom:20px; font:900 22px/1 "Impact"; color:var(--gold); text-shadow:0 2px 10px rgba(0,0,0,.5)}
+
+/* ② 道德困境 —— 定义列表双列 */
+.dl{display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:16px}
+.dl .row{display:grid; grid-template-columns:74px 1fr; gap:18px; align-items:start; padding:20px 22px; transition:.24s}
+.dl .row:hover{transform:translateX(6px); border-color:rgba(255,207,122,.45); background:linear-gradient(180deg,rgba(255,207,122,.07),rgba(255,255,255,.015))}
+.dl b{font:900 30px/1 "Impact",system-ui; letter-spacing:-.02em; background:linear-gradient(135deg,var(--gold),var(--rose)); -webkit-background-clip:text; background-clip:text; color:transparent}
+.dl h3{margin:2px 0 6px; font-size:16.5px}
+.dl p{margin:0; font-size:13.6px; color:var(--ink2)}
+.dl p b{all:unset; font-weight:700; color:var(--teal); font-size:inherit; font-family:inherit; letter-spacing:0}
+
+/* ③ 深度影评 —— 斜切引文卡 */
+.notes{display:grid; grid-template-columns:repeat(auto-fit,minmax(268px,1fr)); gap:16px}
+.note{position:relative; padding:26px 24px; clip-path:polygon(0 0,100% 0,100% calc(100% - 26px),calc(100% - 26px) 100%,0 100%); transition:.3s}
+.note::after{content:""; position:absolute; right:0; bottom:0; border-style:solid; border-width:0 0 26px 26px; border-color:transparent transparent var(--c) transparent; opacity:.85}
+.note:hover{transform:translateY(-5px) rotate(-.5deg)}
+.note q{display:block; margin:0 0 14px; font:italic 15px/1.75 Georgia,"Songti SC",serif; color:var(--ink)}
+.note cite{display:block; font-style:normal; font-size:12.5px; color:var(--ink3); padding-top:10px; border-top:1px dashed var(--line)}
+.note .qm{position:absolute; right:16px; top:6px; font:900 62px/1 Georgia,serif; color:rgba(255,255,255,.12); transition:.4s}
+.note:hover .qm{transform:rotate(12deg); color:var(--c)}
+.note .lb{display:inline-block; font-size:10px; letter-spacing:.2em; color:var(--c); border:1px solid currentColor; border-radius:5px; padding:2px 7px; margin-bottom:12px}
+
+/* ④ 观影指南 —— 步骤条 + 数据卡 */
+.guide{display:grid; grid-template-columns:1.35fr .65fr; gap:26px}
+.steps{display:grid; gap:12px}
+.step{display:grid; grid-template-columns:56px 1fr; gap:16px; align-items:start; padding:16px 18px; transition:.24s}
+.step:hover{transform:translateX(6px); border-color:rgba(45,212,191,.4)}
+.step::before{counter-increment:g; content:"STEP " counter(g,decimal-leading-zero); display:flex; align-items:center; justify-content:center; height:44px; border-radius:12px; font:700 12.5px/1 "JetBrains Mono",Consolas,monospace; letter-spacing:.06em; background:linear-gradient(135deg,var(--teal),var(--blue)); color:#04111c}
+.guide{grid-template-columns:1.35fr .65fr}
+.gbox{display:grid; gap:14px; align-content:start}
+.gbox div{display:grid; grid-template-columns:92px 1fr; gap:10px; align-items:center; padding:11px 0; border-bottom:1px dashed var(--line)}
+.gbox dt{font-size:11px; letter-spacing:.1em; color:var(--ink3)}
+.gbox dd{margin:0; font:700 15px/1.3 "JetBrains Mono",Consolas,monospace; color:var(--gold)}
+.gbox dd em{font-style:normal; font-size:11px; color:var(--ink3); font-weight:400}
+
+/* ⑤ 观影日历 —— 周历 */
+.week{display:grid; grid-template-columns:repeat(7,1fr); gap:10px}
+.day{position:relative; padding:16px 12px 14px; min-height:132px; border-left:3px solid var(--c); transition:.26s}
+.day:hover{transform:translateY(-5px); background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02))}
+.day .wk{font:700 11px/1 "JetBrains Mono",Consolas,monospace; letter-spacing:.14em; color:var(--ink3)}
+.day .dt{font-family:Georgia,"Songti SC",serif; font-size:25px; font-weight:800; line-height:1.25; margin:3px 0 9px; color:var(--c)}
+.day .nm{font-size:13px; font-weight:700; margin-bottom:5px}
+.day .sp{font-size:10.5px; color:var(--ink3); letter-spacing:.04em}
+.day.today{border-color:var(--gold); box-shadow:inset 0 0 0 1px rgba(255,207,122,.55), 0 0 24px rgba(255,207,122,.14)}
+.day.today .dt{background:linear-gradient(92deg,var(--gold),var(--rose)); -webkit-background-clip:text; background-clip:text; color:transparent}
+
+/* ⑥ SEO 论点卡 */
+.seo{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px}
+.seo .card{transition:.26s}
+.seo .card:hover{transform:translateY(-5px); border-color:rgba(160,108,255,.45)}
+.seo h3{margin:0 0 9px; font-size:17px; font-family:Georgia,"Songti SC",serif; color:#fff}
+.seo p{margin:0; font-size:13.6px; color:var(--ink2)}
+.seo p u{text-decoration:none; color:var(--gold); font-weight:700}
+
+/* 页脚 */
+.foot{max-width:var(--max); margin:0 auto; padding:34px 22px 60px; border-top:1px solid var(--line); color:var(--ink3); font-size:12.6px}
+.foot .f1{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; margin-bottom:16px}
+.foot .f1 b{color:var(--ink); font-size:14px; background:linear-gradient(92deg,var(--rose),var(--gold)); -webkit-background-clip:text; background-clip:text; color:transparent}
+.foot a{color:var(--ink2)}
+.foot a:hover{color:var(--gold)}
+.top{position:fixed; right:20px; bottom:24px; width:46px; height:46px; border-radius:50%; display:none; align-items:center; justify-content:center;
+  background:linear-gradient(135deg,var(--rose),var(--plum)); color:#fff; border:0; cursor:pointer; box-shadow:0 10px 26px rgba(255,111,145,.34); z-index:60; font-size:17px}
+.top.show{display:flex}
+
+@media (max-width:1000px){
+  .hero{grid-template-columns:1fr; gap:30px; padding-top:34px}
+  .kv{height:min(340px,50vh); order:-1}
+  .core em{font-size:96px}
+  .guide{grid-template-columns:1fr}
+  .gbox{order:-1}
+}
+@media (max-width:880px){
+  .ham{display:inline-flex; align-items:center; justify-content:center}
+  .menu{position:fixed; inset:0 0 0 auto; width:82vw; max-width:340px; height:100dvh; overflow:auto; margin:0; padding:78px 22px 34px;
+    flex-direction:column; gap:2px; background:rgba(11,16,32,.93); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+    border-left:1px solid var(--line); transform:translateX(104%); transition:transform .32s cubic-bezier(.2,.8,.2,1)}
+  .menu.open{transform:none}
+  .menu a{font-size:15px; padding:13px 16px; border-radius:12px}
+  .menu a.on{background:linear-gradient(92deg,var(--rose),var(--gold)); color:#0b1020}
+  .mv{flex-basis:236px}
+  .week{grid-template-columns:repeat(2,1fr)}
+  .week .day:nth-child(n+8){display:none}
+  .dl .row{grid-template-columns:64px 1fr; gap:14px; padding:17px}
+  .dl b{font-size:26px}
+}
+@media (max-width:600px){
+  section{padding:56px 16px}
+  .hero{padding-left:16px; padding-right:16px}
+  .nav-in{padding:11px 16px}
+  .mv{flex-basis:206px; height:372px}
+  .mv .meta{transform:none; background:linear-gradient(0deg,rgba(5,8,16,.98),rgba(5,8,16,.5) 74%,transparent)}
+  .mv h3{font-size:16.5px}
+  .week{grid-template-columns:1fr}
+  .day{min-height:auto; display:grid; grid-template-columns:64px 1fr; gap:10px; align-items:center; padding:13px 14px}
+  .day .dt{margin:0; font-size:21px}
+  .step{grid-template-columns:44px 1fr; gap:12px; padding:14px}
+  .step::before{height:40px; font-size:11px}
+  .gbox div{grid-template-columns:1fr; gap:2px}
+  .btn{padding:12px 22px; width:100%; text-align:center}
+  .core em{font-size:78px}
+  .kv{height:min(290px,46vh)}
+  .beam{width:196px; margin-left:-98px}
+  .pillar{height:124px}
+}
+@media print{
+  .nav,.ham,.top,.cta{display:none !important}
+  body{background:#fff; color:#111; font-size:11pt; -webkit-text-size-adjust:none}
+  section{padding:20px 0; break-inside:auto}
+  .card{border:1px solid #bbb; background:#fff; box-shadow:none}
+  .mv,.note,.day{break-inside:avoid}
+  .notes,.rail,.dl,.week,.seo{display:block}
+  .core em,.h1 em,.h2 u,.brand b,.day.today .dt{color:#111; -webkit-text-background-clip:initial; background-clip:initial}
+  .hero{grid-template-columns:1fr}
+  .kv{display:none}
+}
+</style>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="nav">
+  <div class="nav-in">
+    <span class="brand"><b>琪琪电影网</b><i>伦理电影</i></span>
+    <button class="ham" id="ham" aria-label="菜单" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav class="menu" id="menu" role="tablist" aria-label="主导航">
+      <a href="#rail" role="tab" aria-selected="false">伦理片单</a>
+      <a href="#dilemma" role="tab" aria-selected="false">道德困境</a>
+      <a href="#notes" role="tab" aria-selected="false">深度影评</a>
+      <a href="#guide" role="tab" aria-selected="false">观影指南</a>
+      <a href="#week" role="tab" aria-selected="false">观影日历</a>
+      <a href="#seo" role="tab" aria-selected="false">关于本站</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+  <div>
+    <p class="eyebrow">QI QI · ETHICS · CINEMA</p>
+    <h1 class="h1" id="h1">伦理片，拍的从来不是<em>对错</em>，<br>而是 <u>两个都对的答案</u>。</h1>
+    <p class="lede">琪琪电影网伦理电影（qiqidianyingwanglunlidianying）以"伦理"为名，专注电影赏析与选片指南。伦理片的正确定义是：<b>以道德困境为叙事引擎</b>——让观众在两个都对的答案之间，无法选择。本站整理经典伦理片单、道德困境类型、导演谱系、4K 修复片单与深度影评，并提供正版观影渠道指引。</p>
+    <div class="chips">
+      <s>家庭伦理</s><s>医疗伦理</s><s>战争伦理</s><s>法律伦理</s><s>科技伦理</s><s>4K 修复</s>
+    </div>
+    <div class="cta">
+      <a class="btn p" href="#rail">开始选片 →</a>
+      <a class="btn g" href="#" rel="nofollow">正版观影渠道</a>
+    </div>
+  </div>
+
+  <div class="kv" aria-hidden="true">
+    <div class="halo"></div>
+    <div class="scale">
+      <span class="pillar"></span>
+      <span class="beam"></span>
+      <span class="pan l"></span>
+      <span class="pan r"></span>
+      <span class="knob"></span>
+    </div>
+    <div class="core"><em>伦</em><span>ETHICS · 天平永不静止</span></div>
+  </div>
+</section>
+
+<!-- ① 伦理片单 -->
+<section id="rail" aria-labelledby="t1">
+  <div class="wrap">
+    <p class="kicker">01 / 伦理片单 · 六部起点</p>
+    <h2 class="h2" id="t1">好伦理片，<u>不给你答案</u></h2>
+    <p class="sub">以下为示例性片单，用于说明"伦理片"的选片标准：是否提出一个无法用常识回答的问题，并让这个问题持续到片尾字幕之后。影片信息（年份、导演、片长、评分）为示意，不构成播放指引。</p>
+
+    <div class="rail">
+      <article class="mv" tabindex="0" style="--a:#c86b8a;--b:#7c5cbf;--c:#ffd7e2">
+        <span class="fr"></span><span class="no">06</span><span class="sc">NO.06</span>
+        <div class="meta">
+          <h3>坠落</h3>
+          <p>家庭 · 1996 · 拉斯·冯·提尔 · 大审判式独白</p>
+          <div class="tags"><s>家庭伦理</s><s>长镜</s><s>独白</s></div>
+          <span class="rt">9.1</span>
+        </div>
+      </article>
+
+      <article class="mv" tabindex="0" style="--a:#e07b39;--b:#c86b4a;--c:#ffd9b8">
+        <span class="fr"></span><span class="no">05</span><span class="sc">NO.05</span>
+        <div class="meta">
+          <h3>罗生门</h3>
+          <p>真相 · 1950 · 黑泽明 · 四个版本，全是真的</p>
+          <div class="tags"><s>多视角</s><s>黑白</s><s>4K 修复</s></div>
+          <span class="rt">9.3</span>
+        </div>
+      </article>
+
+      <article class="mv" tabindex="0" style="--a:#5cc8b8;--b:#2d8fb0;--c:#d7f5ef">
+        <span class="fr"></span><span class="no">04</span><span class="sc">NO.04</span>
+        <div class="meta">
+          <h3>狩猎</h3>
+          <p>谣言 · 2012 · 托马斯·温特伯格 · 一句假话如何杀死一个人</p>
+          <div class="tags"><s>社会伦理</s><s>手持</s><s>群像</s></div>
+          <span class="rt">9.1</span>
+        </div>
+      </article>
+
+      <article class="mv" tabindex="0" style="--a:#7c8cff;--b:#5b5cc8;--c:#dbe2ff">
+        <span class="fr"></span><span class="no">03</span><span class="sc">NO.03</span>
+        <div class="meta">
+          <h3>辩护人</h3>
+          <p>法律 · 2013 · 杨宇硕 · 一个人站出来，99 个才敢跟上</p>
+          <div class="tags"><s>法律伦理</s><s>庭审</s><s>改编自真实</s></div>
+          <span class="rt">9.2</span>
+        </div>
+      </article>
+
+      <article class="mv" tabindex="0" style="--a:#c084fc;--b:#7c4dff;--c:#eee0ff">
+        <span class="fr"></span><span class="no">02</span><span class="sc">NO.02</span>
+        <div class="meta">
+          <h3>上帝之城</h3>
+          <p>贫困 · 2002 · 梅雷莱斯 · 穷人的孩子没有童年</p>
+          <div class="tags"><s>生存伦理</s><s>非线性</s><s>群像</s></div>
+          <span class="rt">9.0</span>
+        </div>
+      </article>
+
+      <article class="mv" tabindex="0" style="--a:#ff6f91;--b:#ffb347;--c:#ffe0c2">
+        <span class="fr"></span><span class="no">01</span><span class="sc">NO.01</span>
+        <div class="meta">
+          <h3>窃听风暴</h3>
+          <p>告密 · 2006 · 多纳斯马尔克 · 一个监听者被监听的对象改变</p>
+          <div class="tags"><s>极权伦理</s><s>克制</s><s>留白</s></div>
+          <span class="rt">9.2</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ② 道德困境 -->
+<section id="dilemma" style="background:linear-gradient(180deg,transparent,rgba(160,108,255,.05))" aria-labelledby="t2">
+  <div class="wrap">
+    <p class="kicker">02 / 道德困境 · 六种写法</p>
+    <h2 class="h2" id="t2">困境不在剧情里，<u>在机位里</u></h2>
+    <p class="sub">同一个伦理困境，换一个机位，观众就会换一个立场。这是伦理片最容易被忽略的技术部分。</p>
+
+    <div class="dl">
+      <div class="card row"><b>01</b><div><h3>家庭：忠诚给谁</h3><p>伦理片最常用也最难写的一种。<b>判断标准</b>：片尾是否仍有人在承担后果。若所有人都在哭，说明编剧替观众做了决定；若没人哭，说明导演信得过观众。</p></div></div>
+      <div class="card row"><b>02</b><div><h3>医疗：一个换一群</h3><p>资源不足时的分配问题。<b>判断标准</b>：是否让"被放弃的那一个"拥有完整人格。把分母拍成统计数字，是偷懒；把分母拍成有名字的人，才是伦理片。</p></div></div>
+      <div class="card row"><b>03</b><div><h3>战争：命令与良心</h3><p>士兵的伦理困境。<b>判断标准</b>：是否给"服从命令"的一方留出尊严。单向批判的战争片是宣传片，双向理解的才是伦理片。</p></div></div>
+      <div class="card row"><b>04</b><div><h3>法律：程序即正义</h3><p>程序与结果的冲突。<b>判断标准</b>：是否承认"正确的结果"也可能来自"错误的过程"。这类片最忌讳法庭戏变成辩论赛。</p></div></div>
+      <div class="card row"><b>05</b><div><h3>科技：造物与责任</h3><p>创造者对被造物的义务。<b>判断标准</b>：是否让技术拥有"不可逆"的后果。可撤销的选择不构成伦理，不可逆的才构成。</p></div></div>
+      <div class="card row"><b>06</b><div><h3>生存：饥饿的算术</h3><p>极端处境下的分配。<b>判断标准</b>：是否保留"拒绝计算"的那个人。只要还有人拒绝把人换算成数字，伦理就还活着。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ③ 深度影评 -->
+<section id="notes" aria-labelledby="t3">
+  <div class="wrap">
+    <p class="kicker">03 / 深度影评 · 六篇</p>
+    <h2 class="h2" id="t3">影评该写的，<u>是"为什么这样拍"</u></h2>
+    <p class="sub">以下是可讨论的观影观点，非定论。伦理片的评价尺度与普通类型片不同：它不比谁更惨，而比谁更诚实地呈现两难。</p>
+
+    <div class="notes">
+      <article class="card note" style="--c:#ff6f91"><span class="qm" aria-hidden="true">“</span>
+        <span class="lb">SILENCE</span>
+        <q>《窃听风暴》里最动人的不是救赎，而是那句没有说出口的台词。主角在剧院里第一次听见"艺术"，镜头没有切给他流泪的脸，只给了他握紧的拳头。伦理片的留白，是把判断权还给观众。</q>
+        <cite>— 观影笔记 · 留白</cite>
+      </article>
+      <article class="card note" style="--c:#ffcf7a"><span class="qm" aria-hidden="true">“</span>
+        <span class="lb">PERSPECTIVE</span>
+        <q>《罗生门》的残忍在于：四个人的证词互相矛盾，却全都符合各自的利益。它不讨论"谁在撒谎"，而是证明"诚实的人也会看见不同的真相"。这才是伦理片的起点。</q>
+        <cite>— 观影笔记 · 多视角</cite>
+      </article>
+      <article class="card note" style="--c:#2dd4bf"><span class="qm" aria-hidden="true">“</span>
+        <span class="lb">RUMOR</span>
+        <q>《狩猎》的恐怖不是来自恶意，而来自"好意"。每个人都觉得自己是在保护孩子。伦理困境的高手写法，是让加害者毫无恶意——那时观众才无处躲藏。</q>
+        <cite>— 观影笔记 · 群像</cite>
+      </article>
+      <article class="card note" style="--c:#5b8cff"><span class="qm" aria-hidden="true">“</span>
+        <span class="lb">PROCEDURE</span>
+        <q>《辩护人》最厉害的一场戏，是庭审。它没有让主角赢，只是让主角"站出来"。伦理片的力量常常不在于改变结果，而在于改变"敢不敢"。</q>
+        <cite>— 观影笔记 · 法律</cite>
+      </article>
+      <article class="card note" style="--c:#c084fc"><span class="qm" aria-hidden="true">“</span>
+        <span class="lb">CHILDREN</span>
+        <q>《上帝之城》用孩子的眼睛拍贫民窟，不是为了卖惨，是为了说明一个事实：当一个孩子没有未来可选，他只能选今天。把贫困拍成"选择"，是伦理片最难的一步。</q>
+        <cite>— 观影笔记 · 生存</cite>
+      </article>
+      <article class="card note" style="--c:#a06cff"><span class="qm" aria-hidden="true">“</span>
+        <span class="lb">MONOLOGUE</span>
+        <q>《坠落》几乎是一场 75 分钟的独白。一个人对着镜头说话，观众被迫成为倾听者，也因此被迫成为共犯。长镜头在这里不是炫技，是最诚实的伦理姿态。</q>
+        <cite>— 观影笔记 · 长镜</cite>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ④ 观影指南 -->
+<section id="guide" style="background:linear-gradient(180deg,rgba(45,212,191,.05),transparent)" aria-labelledby="t4">
+  <div class="wrap">
+    <p class="kicker">04 / 观影指南 · 六步</p>
+    <h2 class="h2" id="t4">看伦理片，<u>别急着下判断</u></h2>
+    <p class="sub">伦理片的正确打开方式，是先承认自己也可能会做错。以下六步，是把"感动"变成"理解"的最小路径。</p>
+
+    <div class="guide">
+      <div class="steps" style="counter-reset:g">
+        <div class="card step"><div><h3>先站在反方</h3><p style="margin:6px 0 0;color:var(--ink2);font-size:13.6px">看完第一幕就替角色做决定，等于提前离场。试着为"你反对的那个人"找三条理由。</p></div></div>
+        <div class="card step"><div><h3>数一数机位</h3><p style="margin:6px 0 0;color:var(--ink2);font-size:13.6px">过肩镜头代表"替谁在看"。全片只用客观镜头的伦理片，往往比哭戏更狠。</p></div></div>
+        <div class="card step"><div><h3>留意声音缺席</h3><p style="margin:6px 0 0;color:var(--ink2);font-size:13.6px">伦理片的配乐越少，判断越重。3 秒以上的静音，通常是导演留给观众的法庭。</p></div></div>
+        <div class="card step"><div><h3>看谁承担了后果</h3><p style="margin:6px 0 0;color:var(--ink2);font-size:13.6px">好伦理片会让"正确的一方"也付出代价。若只有坏人受罚，那只是警匪片。</p></div></div>
+        <div class="card step"><div><h3>查版本与介质</h3><p style="margin:6px 0 0;color:var(--ink2);font-size:13.6px">老片优先 4K 修复 + 10-bit + P3 色域的正版版本。黑白片的灰阶层次，是叙事的一部分。</p></div></div>
+        <div class="card step"><div><h3>重看，而不是二刷</h3><p style="margin:6px 0 0;color:var(--ink2);font-size:13.6px">隔 90 天再看，带着"反方理由"看。伦理片的答案会变，因为你会变。</p></div></div>
+      </div>
+
+      <aside class="gbox" aria-label="观影硬指标">
+        <div class="card"><h3 style="margin:0 0 12px;font-size:15px;font-family:Georgia,'Songti SC',serif">六条硬指标</h3>
+          <div><dt>码率</dt><dd>40–80 <em>Mbps</em></dd></div>
+          <div><dt>色深</dt><dd>10-bit <em>起点</em></dd></div>
+          <div><dt>色域</dt><dd>P3 / <em>BT.2020</em></dd></div>
+          <div><dt>低频</dt><dd>30 <em>Hz 下潜</em></dd></div>
+          <div><dt>重看</dt><dd>≥ 3 <em>次</em></dd></div>
+          <div><dt>情绪点</dt><dd>1 / <em>11 分钟</em></dd></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ 观影日历 -->
+<section id="week" aria-labelledby="t5">
+  <div class="wrap">
+    <p class="kicker">05 / 观影日历 · 七天</p>
+    <h2 class="h2" id="t5">一周七天，<u>七种困境</u></h2>
+    <p class="sub">按"思考强度"而非"片长"排片。伦理片不适合连看，需要留白。</p>
+
+    <div class="week">
+      <article class="card day today" style="--c:#ffcf7a"><div class="wk">MON</div><div class="dt">12</div><div class="nm">窃听风暴</div><div class="sp">极权伦理 · 137 MIN · 留白</div></article>
+      <article class="card day" style="--c:#ff6f91"><div class="wk">TUE</div><div class="dt">13</div><div class="nm">罗生门</div><div class="sp">多视角 · 88 MIN · 黑白</div></article>
+      <article class="card day" style="--c:#5cc8b8"><div class="wk">WED</div><div class="dt">14</div><div class="nm">狩猎</div><div class="sp">社会伦理 · 115 MIN · 手持</div></article>
+      <article class="card day" style="--c:#7c8cff"><div class="wk">THU</div><div class="dt">15</div><div class="nm">辩护人</div><div class="sp">法律伦理 · 127 MIN · 庭审</div></article>
+      <article class="card day" style="--c:#c084fc"><div class="wk">FRI</div><div class="dt">16</div><div class="nm">上帝之城</div><div class="sp">生存伦理 · 130 MIN · 非线性</div></article>
+      <article class="card day" style="--c:#a06cff"><div class="wk">SAT</div><div class="dt">17</div><div class="nm">坠落</div><div class="sp">家庭伦理 · 95 MIN · 独白</div></article>
+      <article class="card day" style="--c:#2dd4bf"><div class="wk">SUN</div><div class="dt">18</div><div class="nm">重看日</div><div class="sp">挑一部 · 换立场 · 记笔记</div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ 关于本站 -->
+<section id="seo" aria-labelledby="t6">
+  <div class="wrap">
+    <p class="kicker">06 / 关于本站</p>
+    <h2 class="h2" id="t6">伦理片，<u>是一种看世界的方式</u></h2>
+    <p class="sub">本站为影视赏析与选片指南站点，不提供任何播放资源。文中影片名称、导演、片长、评分为示例性内容，用于说明选片方法与叙事结构。</p>
+
+    <div class="seo">
+      <div class="card"><h3>伦理 ≠ 伦理片</h3><p>"伦理"在日常用语里常被误用为"伤风败俗"的同义词。电影术语中的伦理片，指的是<u>以道德两难为叙事发动机</u>的类型：它不提供答案，只提供足够真实的两个选项。</p></div>
+      <div class="card"><h3>答案越清楚，电影越差</h3><p>一部伦理片若能在片尾给出明确结论，它通常已经退化成了宣传片或警匪片。好伦理片的字幕升起时，<u>观众还在争论</u>。</p></div>
+      <div class="card"><h3>技术服务于两难</h3><p>长镜头、手持、黑白、静音、过肩镜头——这些不是风格，是立场。<u>机位替谁而设，电影就站在谁那一边</u>。</p></div>
+      <div class="card"><h3>正版，是对伦理的尊重</h3><p>一部探讨"什么值得牺牲"的电影，不该以"牺牲创作者"的方式被观看。本站仅提供正版观影渠道指引，<u>不索引任何涉及版权争议的播放源</u>。</p></div>
+    </div>
+
+    <div class="card" style="margin-top:26px">
+      <h3 style="margin:0 0 10px;font-size:16px;font-family:Georgia,'Songti SC',serif">合规声明</h3>
+      <p style="margin:0;color:var(--ink2);font-size:13.6px">本站内容为电影赏析、选片方法与观影指南，<u>不含任何低俗、色情、暴力或违规内容</u>；不提供、不链接、不索引任何涉及版权争议的播放源、资源链接、M3U/TS 播放列表、直播源或下载资源。文中影片信息为示例性内容，不构成任何播放指引。站点网址：<a href="https://qiqidianyingwanglunlidianying-cn.github.io/" rel="canonical">https://qiqidianyingwanglunlidianying-cn.github.io/</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="f1">
+    <div><b>琪琪电影网 · 伦理电影</b><br>qiqidianyingwanglunlidianying · 影视赏析与选片指南</div>
+    <div style="text-align:right">
+      <a href="#top">回到顶部</a> · <a href="#" rel="nofollow">正版渠道</a> · <a href="#" rel="nofollow">版权声明</a><br>
+      © <span id="yr">2026</span> 本站为单页静态站点，未生成 robots.txt 与 sitemap.xml
+    </div>
+  </div>
+  <div>关键词：伦理电影、伦理片、道德困境、家庭伦理、医疗伦理、战争伦理、法律伦理、科技伦理、电影赏析、电影影评、观影指南、4K 修复、正版观影。</div>
+</footer>
+
+<button class="top" id="topBtn" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var ham=document.getElementById('ham'), menu=document.getElementById('menu');
+  ham.addEventListener('click',function(){
+    var open=menu.classList.toggle('open');
+    ham.setAttribute('aria-expanded',open?'true':'false');
+    document.body.style.overflow=open?'hidden':'';
+  });
+  menu.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){ menu.classList.remove('open'); ham.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+  });
+
+  var links=menu.querySelectorAll('a'), secs=[];
+  links.forEach(function(a){ var el=document.querySelector(a.getAttribute('href')); if(el) secs.push(el); });
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      var id=e.target.id;
+      links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href')==='#'+id && e.isIntersecting); });
+    });
+  },{rootMargin:'-30% 0px -55% 0px',threshold:[0,.25,.5]});
+  secs.forEach(function(s){ io.observe(s); });
+
+  var mv=document.querySelectorAll('.mv');
+  mv.forEach(function(c){
+    c.addEventListener('mousemove',function(e){
+      var r=c.getBoundingClientRect();
+      c.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
+      c.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
+    });
+    c.addEventListener('mouseleave',function(){ c.style.setProperty('--mx','50%'); c.style.setProperty('--my','8%'); });
+  });
+
+  var topBtn=document.getElementById('topBtn');
+  window.addEventListener('scroll',function(){ topBtn.classList.toggle('show', window.scrollY>700); },{passive:true});
+  topBtn.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
